@@ -12,12 +12,24 @@
         trackInteractions: true
     });
 </script>
+
+<script>
+    function onClickSearch() {
+    DD_RUM.addUserAction('search', {
+        'searchstring': document.getElementById("searchterm").value
+    })
+    var x = document.getElementsByName('searchform');
+    x[0].submit(); // Form submission
+}
+
+
+</script>
 <html>
 <h1 >You did it!</h1>
 
-<form action="http://13.229.243.187/rumtest/target.php" method="POST">
+<form action="http://13.229.243.187/rumtest/target.php" method="POST" name="searchform">
     Enter Something: <input type="text" id="searchterm" name="searchterm">
-    <input type="submit">
+    <input type="submit" onClick="onClickSearch()">
 </form>
 
 
