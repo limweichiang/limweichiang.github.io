@@ -7,10 +7,10 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-## Commented out/Disabled next line as instructed by Github Jekyll setup instructions
+## Disabled - Not required in when Jekyll is hosted on Github Pages.
 #gem "jekyll", "~> 4.3.4"
 
-## Adding gem as instructed by Github Jekyll setup instructions.
+## Adding gem to enable Jekyll hosting on  Github Pages..
 gem "github-pages", "~> 232", group: :jekyll_plugins
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
